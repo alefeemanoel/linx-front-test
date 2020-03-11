@@ -17,7 +17,7 @@ export function* getWeather({ payload }) {
 
     yield put(getWeatherSuccess(response.data));
   } catch (err) {
-    toast.error("Erro ao atualizar perfil, confira seus dados!");
+    toast.error("Erro cidade não encotrada, confira o nome!");
     yield put(getWeatherFailure());
   }
 }
